@@ -2,7 +2,7 @@ require('dotenv').config()
 
 module.exports = {
   siteMetadata: {
-    title: `Creative Portfolio`,
+    title: `Aboriginal Art`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -11,7 +11,7 @@ module.exports = {
     {
       resolve: `gatsby-source-datocms`,
       options: {
-        apiToken: process.env.DATO_API_TOKEN,
+        apiToken: env.DATO_API_TOKEN,
       },
     },
   ],

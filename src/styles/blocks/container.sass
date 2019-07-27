@@ -26,18 +26,20 @@
 
 @media screen and (min-width: 900px)
   .container
-    display: flex
+    display: inline-grid
     padding: 0
+    width: 100%
+    margin: 0 auto
 
   .container__mobile-header
     display: none
 
   .container__sidebar
     display: block
-    width: 30%
+    width: 100%
     min-width: 320px
     box-sizing: border-box
-    padding: 40px
+    padding: 10px 40px 40px 40px
     background-color: $light-bg-color
 
   .container__body
