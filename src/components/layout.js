@@ -47,7 +47,7 @@ const TemplateWrapper = ({ children }) => (
       />
       <div className="container__header">
         <div className="headerbar">
-          <div class="header__nav">
+          <div className="header__nav">
             <ul className="header__menu">
               <li>
                 <Link to="/">Home</Link>
@@ -67,7 +67,7 @@ const TemplateWrapper = ({ children }) => (
               ))}
             </div>
           </div>
-          <div class="header__banner">
+          <div className="header__banner">
             <h6 className="header__title">
               <Link to="/">{data.datoCmsSite.globalSeo.siteName}</Link>
             </h6>
