@@ -45,10 +45,10 @@ const TemplateWrapper = ({ children }) => (
         favicon={data.datoCmsSite.faviconMetaTags}
         seo={data.datoCmsHome.seoMetaTags}
       />
-      <div className="container__sidebar">
-        <div className="sidebar">
-          <div class="sidebar__header">
-            <ul className="sidebar__menu">
+      <div className="container__header">
+        <div className="headerbar">
+          <div class="header__nav">
+            <ul className="header__menu">
               <li>
                 <Link to="/">Home</Link>
               </li>
@@ -56,7 +56,7 @@ const TemplateWrapper = ({ children }) => (
                 <Link to="/about">About</Link>
               </li>
             </ul>
-            <div className="sidebar__social">
+            <div className="header__social">
               {data.allDatoCmsSocialProfile.edges.map(({ node: profile }) => (
                 <a
                   key={profile.profileType}
@@ -67,16 +67,18 @@ const TemplateWrapper = ({ children }) => (
               ))}
             </div>
           </div>
-          <h6 className="sidebar__title">
-            <Link to="/">{data.datoCmsSite.globalSeo.siteName}</Link>
-          </h6>
-          <div
-            className="sidebar__intro"
-            dangerouslySetInnerHTML={{
-              __html: data.datoCmsHome.introTextNode.childMarkdownRemark.html,
-            }}
-          />
-          <div className="sidebar__copyright">{data.datoCmsHome.copyright}</div>
+          <div class="header__banner">
+            <h6 className="header__title">
+              <Link to="/">{data.datoCmsSite.globalSeo.siteName}</Link>
+            </h6>
+            <div
+              className="header__intro"
+              dangerouslySetInnerHTML={{
+                __html: data.datoCmsHome.introTextNode.childMarkdownRemark.html,
+              }}
+            />
+            <div className="header__copyright">{data.datoCmsHome.copyright}</div>
+          </div>
         </div>
       </div>
       <div className="container__body">
