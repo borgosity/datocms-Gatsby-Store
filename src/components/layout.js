@@ -77,6 +77,17 @@ const TemplateWrapper = ({ children }) => (
                 __html: data.datoCmsHome.introTextNode.childMarkdownRemark.html,
               }}
             />
+            <a href="#" className="cart__summary snipcart-summary snipcart-checkout">
+              <div className="cart__summary-title">
+                MY CART
+              </div>
+              <div className="cart__summary-line">
+                Number of items: <span className="snipcart-total-items"></span>
+              </div>
+              <div className="cart__summary-line">
+                Total price: <span className="snipcart-total-price"></span>
+              </div>
+            </a>
             <div className="header__copyright">{data.datoCmsHome.copyright}</div>
           </div>
         </div>

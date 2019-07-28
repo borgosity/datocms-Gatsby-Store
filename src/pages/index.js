@@ -20,6 +20,9 @@ const IndexPage = ({ data }) => (
               <div className="card__description">
                 <p>{work.excerpt}</p>
               </div>
+              <a href="#" class="snipcart-checkout">
+                <span className="cart__buy-button">Buy now</span>
+              </a>
             </figcaption>
           </figure>
         </div>

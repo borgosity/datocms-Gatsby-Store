@@ -1,0 +1,45 @@
+.cart__buy-button 
+  float: right
+  text-align: center
+  text-transform: uppercase
+  background: #c84c36
+  padding: 10px 10px
+  color: #fff
+  position: relative
+  font-weight: 700
+  box-shadow: 0px 5px 10px #222
+
+  &:hover 
+    text-decoration: underline
+
+    &:before 
+      position: absolute
+      top: -10px
+      left: 60%
+      white-space: nowrap
+      font-family: "times new roman", times, serif
+      font-weight: normal
+      font-style: italic
+      mix-blend-mode: difference
+      text-transform: lowercase
+      text-decoration: overline
+      color: #00efff
+      font-size: 2em
+
+.cart__summary
+  padding: 10px
+  border-radius: 5px
+  text-decoration: none
+  box-shadow: 0px 5px 10px $box-shadow
+  &:hover
+    text-decoration: underline
+
+.cart__summary-title
+  color: $light-body-color
+  font-size: 14px
+  text-align: center
+
+.cart__summary-line
+  color: $light-body-color
+  font-size: 14px
+  text-align: left
